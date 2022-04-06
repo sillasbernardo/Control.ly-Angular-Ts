@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Russo One';
+    src: url('/assets/fonts/RussoOne-Regular.woff2') format('woff2'),
+        url('/assets/fonts/RussoOne-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.base{
+    background-color: #006D74;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    margin: -0.6%;
+
+    .login-box{
+        position: absolute;
+        top: 25%;
+        left: 25%;
+        width: 625px;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        border-radius: 10px;
+
+        .left-side{
+            background-color: #E8E8E8;
+            border-radius: 10px;
+            padding: 23% 5%;
+        }
+
+        .right-side{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 20px;
+
+            h1{
+                font-family: 'Russo One';
+                letter-spacing: 2px;
+                color: #006D74;
+            }
+
+            input{
+                margin-bottom: 5px;
+                height: 25px;
+                border-radius: 10px;
+                border-style: none;
+                background-color: #E8E8E8;
+                padding: 5px;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+            }
+
+            button{
+                width: 100px;
+                height: 30px;
+                margin: 15px 110px;
+                border-style: none;
+                border-radius: 10px;
+                background-color: #006D74;
+                color: white;
+                font-weight: bold;
+                cursor: pointer;
+            }
+
+            span{
+                color: #006D74;
+                                
+                a{
+                    text-decoration: none;
+                    color: #006D74;
+                }
+            }
+        }
+    }
+}
