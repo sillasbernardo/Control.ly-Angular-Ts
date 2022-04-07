@@ -1,7 +1,7 @@
 <section>
     <div class="sidenav-box">
         <img src="assets/img/logo.png" width="180" height="45">
-        <div class="line"></div>
+        <span class="dashboard-word">Dashboard</span>
         <ul>
             <li>
                 <fa-icon [icon]="faHome"></fa-icon>
@@ -24,12 +24,22 @@
                 <span>Funcionários</span>
             </li>
         </ul>
-        <h5>v1.0</h5>
-    </div>
-    <div class="topbar-box">
-        <div class="profile-icon">
-            <span id="usernameId">{{username}}</span>
-            <fa-icon [icon]="faProfile"></fa-icon>
+        <span id="Account-word">Conta</span>
+        <div class="profile">
+            <div class="profile-photo"></div>
+            <span>{{username}}</span>
+            <span>{{userRole}}</span>
         </div>
+        <div class="profile-options">
+            <li>
+                <fa-icon [icon]="faSetting"></fa-icon>
+                <span>Configurações</span>
+            </li>
+            <li>
+                <fa-icon [icon]="faExit"></fa-icon>
+                <span>Sair</span>
+            </li>
+        </div>
+        <h5>v1.0</h5>
     </div>
 </section>

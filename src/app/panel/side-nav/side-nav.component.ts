@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faHome, faClipboardList, faPrint, faBoxesStacked, faUsers, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faClipboardList, faPrint, faBoxesStacked, faUsers, faUser, faGear, faRightFromBracket } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-side-nav',
@@ -13,8 +13,11 @@ export class SideNavComponent implements OnInit {
   faInventory = faBoxesStacked
   faEmployees = faUsers
   faProfile = faUser
+  faSetting = faGear
+  faExit = faRightFromBracket
 
   username = "Sillas Bernardo"
+  userRole = "Coordenador"
 
 
   constructor() { }
