@@ -1,0 +1,105 @@
+$sizeOfBox: 200px;
+
+.sidenav-box{
+    background-color: #13395d;
+    width: $sizeOfBox;
+    height: 1000px;
+    margin: -0.6%;
+    position: fixed;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    img{
+        background-color: #E4FBFF;
+        padding: 10px 10px;
+    }
+
+    .line{
+        width: $sizeOfBox;
+        height: 2px;
+        margin-top: 5px;
+        background-color: #E4FBFF;
+    }
+
+    ul{
+        list-style-type: none;
+        margin-top: 2px;
+
+        li{
+            margin: 7px 0 0 -40px;
+            padding: 15px 0px;
+            text-align: left;
+            color: #E4FBFF;
+            font-size: 13pt;
+            font-family:Arial, Helvetica, sans-serif;
+            cursor: pointer;
+        }
+
+        li:hover{
+            background-color: #194a77;
+        }
+
+        fa-icon{
+            margin-left: 20px;
+        }
+
+        span{
+            margin-left: 20px;
+        }
+    }
+
+    h5{
+        color: #E4FBFF;
+        text-align: center;
+        position: inherit;
+        width: $sizeOfBox;
+        bottom: -20px;
+    }
+}
+
+.topbar-box{
+    background-color: #13395d;
+    position: fixed;
+    width: 85%;
+    height: 65px;
+    left: $sizeOfBox;
+    top: 0;
+
+    .profile-icon{
+        position: inherit;
+        left: 1290px;
+        top: 2%;
+
+        span{
+            color: #13395d;
+            position: inherit;
+            left: 1165px;
+            top: 23px;
+            z-index: 1;
+            pointer-events: none;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 700;
+
+        }
+
+        fa-icon{
+            position: inherit;
+            left: 1300px;
+            top: 12px;
+            transform: scale(1.3);
+            text-align: center;
+            padding: 0.8%;
+            cursor: pointer;
+            color: #E4FBFF;
+            border-radius: 10px;
+            transition: 0.2s ease-in-out;
+        }
+
+        fa-icon:hover{
+            color: #13395d;
+            background-color: #E4FBFF;
+            padding-left: 130px;
+            border-radius: 15px;
+            left: 1160px;
+        }
+    }
+}
