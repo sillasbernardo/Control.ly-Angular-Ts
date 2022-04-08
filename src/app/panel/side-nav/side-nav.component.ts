@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { faHome, faClipboardList, faPrint, faBoxesStacked, faUsers, faUser, faGear, faRightFromBracket } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faClipboardList, faPrint, faBoxesStacked, faUsers, faUser, faGear, faRightFromBracket, faBell } from '@fortawesome/free-solid-svg-icons';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-side-nav',
@@ -15,12 +16,17 @@ export class SideNavComponent implements OnInit {
   faProfile = faUser
   faSetting = faGear
   faExit = faRightFromBracket
+  faAlert = faBell
 
-  username = "Sillas Bernardo"
-  userRole = "Coordenador"
+  username = "Nome Sobrenome"
+  userRole = "Cargo"
 
 
-  constructor() { }
+  constructor(private router: Router) { }
+
+  goToUrl(location: String){
+    this.router.navigate([location]);
+  }
 
   ngOnInit(): void {
   }

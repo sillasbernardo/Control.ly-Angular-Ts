@@ -49,7 +49,7 @@ $sizeOfBox: 200px;
         }
     }
 
-    #Account-word{
+    #Alert-word{
         color: #e4fbff83;
         font-family: sans-serif;
         position: fixed;
@@ -58,10 +58,54 @@ $sizeOfBox: 200px;
         font-size: 10pt;
     }
 
+    .alertClass{
+        list-style-type: none;
+        color: #e4fbffd5;
+        position: relative;
+        top: 35px;
+        left: 20px;
+        cursor: pointer;
+
+        .bubble{
+            position: fixed;
+            left: 135px;
+            top: 350px;
+            width: 15px;
+            height: 15px;
+            padding: 2px;
+            border-radius: 10px;
+            background-color: red;
+            color: #e4fbffd5;
+            text-align: center;
+        }
+
+        span{
+            position: inherit;
+            left: 15px;
+        }
+    }
+
+    .alertClass:hover{
+        background-color: #194a77;
+        width: 160px;
+        padding: 10px 20px;
+        margin: -10px -20px;
+    }
+
+
+    #Account-word{
+        color: #e4fbff83;
+        font-family: sans-serif;
+        position: fixed;
+        left: 20px;
+        top: 410px;
+        font-size: 10pt;
+    }
+
     .profile{
         position: fixed;
         left: 20px;
-        top: 360px;
+        top: 440px;
         cursor: pointer;
         background-color: #194a77;
         width: 180px;
@@ -100,7 +144,7 @@ $sizeOfBox: 200px;
 
     .profile-options{
         position: fixed;
-        top: 400px;
+        top: 480px;
         left: 40px;
         cursor: pointer;
 
@@ -109,6 +153,8 @@ $sizeOfBox: 200px;
             color: #e4fbffd5;
             margin: 2px auto;
             padding: 7px 5px;
+            font-family: sans-serif;
+            font-size: 11pt;
         }
 
         span{

@@ -8,6 +8,7 @@ import { HelpComponent } from './auth/help/help.component';
 import { HomeComponent } from './panel/home/home.component';
 import { SideNavComponent } from './panel/side-nav/side-nav.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { UsersComponent } from './panel/users/users.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     HelpComponent,
     HomeComponent,
     SideNavComponent,
+    UsersComponent,
   ],
   imports: [
     BrowserModule,

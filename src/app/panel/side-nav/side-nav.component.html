@@ -19,11 +19,20 @@
                 <fa-icon [icon]="faInventory"></fa-icon>
                 <span>Inventário</span>
             </li>
-            <li>
+            <li (click)="goToUrl('/users')">
                 <fa-icon [icon]="faEmployees"></fa-icon>
-                <span>Funcionários</span>
+                <span>Usuários</span>
             </li>
         </ul>
+
+        <span id="Alert-word">Alerta</span>
+        <li class="alertClass">
+            <fa-icon [icon]="faAlert"></fa-icon>
+            <div class="bubble">1</div>
+            <span>Notificações</span>
+        </li>
+
+
         <span id="Account-word">Conta</span>
         <div class="profile">
             <div class="profile-photo"></div>

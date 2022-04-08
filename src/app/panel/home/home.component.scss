@@ -1,0 +1,66 @@
+.home-screen{
+    position: relative;
+    left: 192px;
+    width: 84vw;
+    height: 1000px;
+    
+    .ticket-status{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 10px;
+        max-width: 1100px;
+        align-items: center;
+        margin: 0 auto;
+
+        div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            padding-bottom: 10px;
+            border-radius: 10px;
+
+            fa-icon{
+                padding: 20px;
+                font-size: 36pt;
+                color: #e4fbff;
+            }
+
+            .quantity{
+                font-family: sans-serif;
+                font-size: 28pt;
+                font-weight: 700;
+                margin-top: -10px;
+                color: #e4fbff;
+            }
+
+            .title-month{
+                max-width: max-content;
+                margin: 0 auto;
+
+                span:nth-of-type(1){
+                    color: #e4fbff;
+                    font-family: sans-serif;
+                    font-size: 12pt;
+                }
+
+                span:nth-of-type(2){
+                    color: #e4fbffbe;
+                    text-align: right;
+                    font-family: sans-serif;
+                    font-size: 11pt;
+                }
+            }
+        }
+        
+        .open-tickets{background-color: #006D74;}
+        .closed-tickets{background-color: #740000;}
+        .online-printers{
+            grid-column-start: 4;
+            background-color: #697400;
+        }
+        .inserted-items{background-color: #005074;}
+        .total-employees{background-color:#520074;}
+    }
+
+}
