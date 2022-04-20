@@ -1,0 +1,8 @@
+.content{
+    grid-column: 2 / span 4;
+}
+
+.full-container{
+    display: grid;
+    grid-template-columns: [sidebar] 250px repeat(4, 1fr);
+}
