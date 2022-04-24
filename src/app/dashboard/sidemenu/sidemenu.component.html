@@ -1,3 +1,69 @@
 <div class="sidemenu-container">
-    <p>works</p>
+    <div class="logo">
+        <img src="assets/img/logo.png" width="150" height="50">
+    </div>
+    <div class="menu">
+        <span class="menu-title">Menu</span>
+        <div class="menu-line"></div>
+        <ul>
+            <li>
+                <fa-icon [icon]="faHome"></fa-icon>
+                <span>Home</span>
+            </li>
+            <li>
+                <fa-icon [icon]="faTicket"></fa-icon>
+                <span>Chamados</span>
+            </li>
+            <li>
+                <fa-icon [icon]="faPrinter"></fa-icon>
+                <span>Impressoras</span>
+            </li>
+            <li>
+                <fa-icon [icon]="faInventory"></fa-icon>
+                <span>Inventário</span>
+            </li>
+            <li>
+                <fa-icon [icon]="faEmployees"></fa-icon>
+                <span>Usuários</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="alert">
+        <span class="alert-title">Alerta</span>
+        <div class="bubble">99+</div>
+        <ul>
+            <li>
+                <fa-icon [icon]="faAlert"></fa-icon>
+                <span>Notificações</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="account">
+        <span class="account-title">Conta</span>
+        <div class="account-info" (click)="arrowIsClicked()">
+            <div class="account-small-photo">
+                <img src="assets/img/profile ico example.ico" width="30">
+             </div>
+             <div class="account-details">
+                 <span class="username">Nome Sobrenome</span>
+                 <span class="role">Cargo</span>
+             </div>
+             <fa-icon [icon]="faArrowRight" *ngIf="!arrowStatus"></fa-icon>
+             <fa-icon [icon]="faArrowDown" *ngIf="arrowStatus"></fa-icon>
+        </div>
+    </div>
+    <div class="account-options" *ngIf="accountOptions">
+        <ul>
+            <li>
+                <fa-icon [icon]="faSetting"></fa-icon>
+                <span>Configurações</span>
+            </li>
+            <li>
+                <fa-icon [icon]="faExit"></fa-icon>
+                <span>Sair</span>
+            </li>
+        </ul>
+    </div>
 </div>
