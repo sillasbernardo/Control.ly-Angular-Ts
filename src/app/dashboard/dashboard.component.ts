@@ -1,4 +1,5 @@
-import { Component, OnInit } from "@angular/core"
+import { Component, OnInit, ViewChild, AfterViewInit } from "@angular/core"
+import { SidemenuComponent } from "./sidemenu/sidemenu.component";
 
 @Component({
     selector: 'app-dashboard',
@@ -6,13 +7,19 @@ import { Component, OnInit } from "@angular/core"
     styleUrls: ['./dashboard.component.scss']
 })
 
-export class DashboardComponent implements OnInit{
+export class DashboardComponent implements OnInit, AfterViewInit{
 
-    isUsersUp: false;
+    @ViewChild(SidemenuComponent) sideMenuComponent = SidemenuComponent;
+
+    isUsersUp = false;
 
     constructor(){}
 
     ngOnInit(): void {
+        
+    }
+
+    ngAfterViewInit(): void {
         
     }
 }

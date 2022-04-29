@@ -1,5 +1,4 @@
 import { Component, OnInit} from "@angular/core";
-import { tick } from "@angular/core/testing";
 
 import { faHome, faClipboardList, faPrint, faBoxesStacked, faUsers, faUser, faGear, faRightFromBracket, faBell, faAngleRight, faAngleDown } from "@fortawesome/free-solid-svg-icons";
 
