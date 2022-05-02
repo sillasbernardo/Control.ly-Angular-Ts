@@ -9,7 +9,7 @@ import { SidemenuComponent } from "./sidemenu/sidemenu.component";
 
 export class DashboardComponent implements OnInit, AfterViewInit{
 
-    @ViewChild(SidemenuComponent) sideMenuComponent = SidemenuComponent;
+    @ViewChild(SidemenuComponent) sideMenuComponent: any;
 
     isUsersUp = false;
 
@@ -20,6 +20,6 @@ export class DashboardComponent implements OnInit, AfterViewInit{
     }
 
     ngAfterViewInit(): void {
-        
+        this.isUsersUp = this.sideMenuComponent.isUsersUp;
     }
 }

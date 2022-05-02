@@ -6,7 +6,7 @@
         <span class="menu-title">Menu</span>
         <div class="menu-line"></div>
         <ul>
-            <li>
+            <li [routerLink]="['/dashboard']">
                 <fa-icon [icon]="faHome"></fa-icon>
                 <span>Home</span>
             </li>
@@ -18,11 +18,11 @@
                 <fa-icon [icon]="faPrinter"></fa-icon>
                 <span>Impressoras</span>
             </li>
-            <li (click)="onMenuClick(5)">
+            <li>
                 <fa-icon [icon]="faInventory"></fa-icon>
                 <span>Inventário</span>
             </li>
-            <li>
+            <li [routerLink]="['/users']">
                 <fa-icon [icon]="faEmployees"></fa-icon>
                 <span>Usuários</span>
             </li>
