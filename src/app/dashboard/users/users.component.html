@@ -1,22 +1,25 @@
 <div class="container">
     <app-sidemenu></app-sidemenu>
-    <div class="left-side">
-        <div class="upper-pannel">
+    <div class="white-container">    
+        <div class="upper-row">
             <h3>Usuários</h3>
-            <button>Novo usuário</button>
+            <button id="new-user-btn">Novo usuário</button>
         </div>
         <div class="table-window">
             <table>
                 <tr class="tHeader">
-                    <th>Nº</th>
+                    <th>ID</th>
                     <th>Nome</th>
+                    <th>LDAP</th>
                     <th>Departamento</th>
                 </tr>
-                <tr class="tContent">
-                    <td>01</td>
-                    <td>Nome Sobrenome</td>
-                    <td>Assistente Administrativo</td>
-                    <td></td>
+                <tr class="tContent" *ngFor="let user of users">
+                    <td>{{user.id}}</td>
+                    <td>{{user.name}}</td>
+                    <td>{{user.ldap}}</td>
+                    <td>{{user.department}}</td>
+                    <td id="edit-user"><fa-icon [icon]="faEditUser"></fa-icon></td>
+                    <td id="delete-user"><fa-icon [icon]="faDeleteUser"></fa-icon></td>
                 </tr>
             </table>
         </div>
