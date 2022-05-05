@@ -5,15 +5,20 @@
 
         <table>
             <div class="users-list">
-                <tr>
+                <tr class="theader">
                     <th>Nome</th>
                     <th>LDAP</th>
                     <th>Departamento</th>
                 </tr>
-                <tr *ngFor="let user of users">
-                    <td>{{user.name}}</td>
+                <tr *ngFor="let user of users" class="tcontent">
+                    <td>
+                        <fa-icon id="user-icon" [icon]="faUserIcon"></fa-icon>
+                        {{user.name}}
+                    </td>
                     <td>{{user.ldap}}</td>
                     <td>{{user.department}}</td>
+                    <td id="edit-user"><fa-icon [icon]="faEditUser"></fa-icon></td>
+                    <td id="delete-user"><fa-icon [icon]="faDeleteUser"></fa-icon></td>
                 </tr>
             </div>
         </table>

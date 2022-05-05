@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 
-import { faPenToSquare, faUser, faUserXmark } from "@fortawesome/free-solid-svg-icons";
+import { faPenToSquare, faUserXmark, faCircleUser } from "@fortawesome/free-solid-svg-icons";
 
 @Component({
     selector: 'app-users',
@@ -12,6 +12,7 @@ export class UsersComponent{
 
     faEditUser = faPenToSquare;
     faDeleteUser = faUserXmark;
+    faUserIcon = faCircleUser;
 
     users = [
         {

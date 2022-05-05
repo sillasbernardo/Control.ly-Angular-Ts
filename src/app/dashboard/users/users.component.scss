@@ -10,21 +10,63 @@
         opacity: 70%;
     }
 
+    table{
+        border-collapse: separate;
+        border-spacing: 0 10px;
+    }
+
     .users-list{
-        background-color: rgb(255, 255, 255);
         margin: 0 0 0 10px;
 
+        .tcontent:hover{
+            background-color: #bfd1dd;
+        }
+
         tr{
+            font-family: sans-serif;            
+            color: #13395d;
+            text-align: left;
+
             th{
                 padding: 10px 50px;
                 color: #13395d;
                 font-family: sans-serif;
                 font-size: 10pt;
+                background-color: #809bad;
+                
             }
 
             td{
-                padding: 7px 0;
+                padding: 7px 30px;
+                border-bottom: 1px solid #bfd1dd;
+                border-collapse: collapse;
+                cursor: pointer;
 
+                #user-icon{
+                    font-size: 14pt;
+                    padding: 0 10px 0 0;
+                    color: #809bad;
+                }
+            }
+
+            #edit-user, #delete-user{
+                padding: 7px;
+                color: white;
+                border-radius: 10px;
+                cursor: pointer;
+                opacity: 70%;
+            }
+
+            #edit-user:hover, #delete-user:hover{
+                opacity: 100%;
+            }
+
+            #edit-user{
+                background-color: #809bad;
+            }
+
+            #delete-user{
+                background-color: #ad8080;
             }
         }
     }
