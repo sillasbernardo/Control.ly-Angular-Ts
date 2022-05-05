@@ -2,97 +2,29 @@
     display: flex;
     flex-direction: row;
 
-    .white-container{
-        display: flex;
-        flex-direction: column;
-        width: 90%;
-        background-color: #f2f1f8;
-        margin: 20px 10px;
-        border-radius: 10px;
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    
-        .upper-row{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            background: white;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
+    h3{
+        font-family: sans-serif;
+        font-size: 12pt;
+        color: #13395d;
+        margin: 32px 20px 2px;
+        opacity: 70%;
+    }
 
-            h3{
+    .users-list{
+        background-color: rgb(255, 255, 255);
+        margin: 0 0 0 10px;
+
+        tr{
+            th{
+                padding: 10px 50px;
+                color: #13395d;
                 font-family: sans-serif;
-                font-size: 16pt;
-                margin: 10px 20px;
-                position: relative;
-                top: 7px;
-                color: #cdd9e4;
-
+                font-size: 10pt;
             }
 
-            #new-user-btn{
-                margin: 10px 20px;
-                padding: 10px 20px;
-                background: #194a77;
-                color: white;
-                font-family: sans-serif;
-                font-size: 11pt;
-                font-weight: 600;
-                border-style: none;
-                border-radius: 7px;
-                cursor: pointer;
-            }
+            td{
+                padding: 7px 0;
 
-            #new-user-btn:hover{
-                opacity: 70%;
-            }
-        }
-
-        .table-window{
-            margin: 20px 20px 0 20px;
-    
-            .tHeader{
-                background: #194a77;
-                color: white;
-                font-family: sans-serif;
-                font-size: 11pt;
-    
-                th{
-                    padding: 5px 20px;
-                }
-            }
-    
-            .tContent{         
-                td{
-                    margin: 20px 20px 0 20px;
-                    padding: 10px 20px;
-                    background: #cdd9e4;
-                    font-size: 10pt;
-                    font-family: sans-serif;
-                }
-                
-                #edit-user{
-                    background-color: #446d94;
-                    color: white;
-                    position: relative;
-                    left: 20px;
-                    border-radius: 5px;
-                    cursor: pointer;
-                    opacity: 70%;
-                }
-
-                #delete-user{
-                    background-color: #944444;
-                    color: white;
-                    position: relative;
-                    left: 25px;
-                    border-radius: 5px;
-                    cursor: pointer;
-                    opacity: 70%;
-                }
-
-                #edit-user:hover, #delete-user:hover{
-                    opacity: 100%;
-                }
             }
         }
     }

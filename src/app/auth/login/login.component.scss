@@ -8,21 +8,20 @@
 }
 
 .base{
-    background-color: #13395d;
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    margin: -0.6%;
+    background: #13395d;
+    height: 100vh;
+    width: 100vw;
 
     .login-box{
-        position: absolute;
-        top: 25%;
-        left: 25%;
-        width: 625px;
-        background-color: white;
         display: flex;
-        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: white;
+        width: 50%;
+        justify-content: space-between;
         border-radius: 10px;
+        position: relative;
+        left: 25%;
+        top: 25%;
 
         .left-side{
             background-color: #E8E8E8;
@@ -72,6 +71,23 @@
                     text-decoration: none;
                     color: #13395d;
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px){
+    .base{
+        
+        .login-box{
+            left: 5%;
+            top: 20%;
+            width: 90%;
+
+            .left-side{
+                width: 100%;
+                padding: 2%;
+                text-align: center;
             }
         }
     }
