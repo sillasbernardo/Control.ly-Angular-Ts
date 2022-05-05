@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 
-import { faPenToSquare, faUserXmark, faCircleUser } from "@fortawesome/free-solid-svg-icons";
+import { faPenToSquare, faUserXmark, faCircleUser, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
 @Component({
     selector: 'app-users',
@@ -13,25 +13,26 @@ export class UsersComponent{
     faEditUser = faPenToSquare;
     faDeleteUser = faUserXmark;
     faUserIcon = faCircleUser;
+    faSearchIcon = faMagnifyingGlass;
 
     users = [
         {
             id: 1,
             name: "Sillas Bernardo",
             ldap: "sillas.bernardo",
-            department: "Coordenador I"
+            department: "TI"
         },
         {
             id: 2,
             name: "Kenji Chikui",
             ldap: "kenji.chikui",
-            department: "Estagiário"
+            department: "TI"
         },
         {
             id: 3,
             name: "João Vitor",
             ldap: "joao.vitor",
-            department: "Estagiário"
+            department: "TI"
         }
     ];
 }

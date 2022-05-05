@@ -2,22 +2,32 @@
     <app-sidemenu></app-sidemenu>
     <div class="users-section">
         <h3>Usuários</h3>
-
+        <div class="search-bar">
+            <div class="blank-space"></div>
+            <input type="text" name="search-bar" id="search-bar" placeholder="Procurar usuário">
+            <fa-icon [icon]="faSearchIcon"></fa-icon>
+        </div>
         <table>
             <div class="users-list">
                 <tr class="theader">
                     <th>Nome</th>
                     <th>LDAP</th>
                     <th>Departamento</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
                 </tr>
                 <tr *ngFor="let user of users" class="tcontent">
-                    <td>
+                    <td [style.font-weight]="'700'">
                         <fa-icon id="user-icon" [icon]="faUserIcon"></fa-icon>
                         {{user.name}}
                     </td>
                     <td>{{user.ldap}}</td>
                     <td>{{user.department}}</td>
+                    <td></td>
                     <td id="edit-user"><fa-icon [icon]="faEditUser"></fa-icon></td>
+                    <td></td>
                     <td id="delete-user"><fa-icon [icon]="faDeleteUser"></fa-icon></td>
                 </tr>
             </div>
