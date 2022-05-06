@@ -10,6 +10,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { SidemenuComponent } from './dashboard/sidemenu/sidemenu.component';
 import { UsersComponent } from './dashboard/users/users.component';
 import { CreateUserComponent } from './dashboard/users/create user/createuser.component';
+import { EditUserComponent } from './dashboard/users/edit user/edituser.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { CreateUserComponent } from './dashboard/users/create user/createuser.co
     DashboardComponent,
     SidemenuComponent,
     UsersComponent,
-    CreateUserComponent
+    CreateUserComponent,
+    EditUserComponent
   ],
   imports: [
     BrowserModule,

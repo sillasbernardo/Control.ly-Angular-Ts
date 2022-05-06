@@ -34,7 +34,7 @@
                     <td>{{user.ldap}}</td>
                     <td>{{user.department}}</td>
                     <td></td>
-                    <td id="edit-user"><fa-icon [icon]="faEditUser"></fa-icon></td>
+                    <td (click)="onEditUser(user.name)" vid="edit-user"><fa-icon [icon]="faEditUser"></fa-icon></td>
                     <td></td>
                     <td id="delete-user"><fa-icon [icon]="faDeleteUser"></fa-icon></td>
                 </tr>
@@ -54,6 +54,11 @@
     <!-- Opens a modal for new user creation -->
     <div *ngIf="newUser" class="new-user">
         <app-createuser (onNewUser)="onNewUser()"></app-createuser>
+    </div>
+
+    <!-- Opens a modal for user edit -->
+    <div *ngIf="editUser" class="edit-user">
+        <app-edituser (onCloseEditUser)="onCloseEditUser()"></app-edituser>
     </div>
 
     <!-- Needs to create a modal for user edit -->
