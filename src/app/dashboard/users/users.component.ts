@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component } from "@angular/core";
 
 import { faPenToSquare, faUserXmark, faCircleUser, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
@@ -15,24 +15,67 @@ export class UsersComponent{
     faUserIcon = faCircleUser;
     faSearchIcon = faMagnifyingGlass;
 
+    newUser = false;
+
     users = [
         {
-            id: 1,
-            name: "Sillas Bernardo",
-            ldap: "sillas.bernardo",
-            department: "TI"
+            name: "Nome Sobrenome",
+            ldap: "nome.sobrenome",
+            department: "Setor"
         },
         {
-            id: 2,
-            name: "Kenji Chikui",
-            ldap: "kenji.chikui",
-            department: "TI"
+            name: "Nome Sobrenome",
+            ldap: "nome.sobrenome",
+            department: "Setor"
         },
         {
-            id: 3,
-            name: "João Vitor",
-            ldap: "joao.vitor",
-            department: "TI"
+            name: "Nome Sobrenome",
+            ldap: "nome.sobrenome",
+            department: "Setor"
+        },
+        {
+            name: "Nome Sobrenome",
+            ldap: "nome.sobrenome",
+            department: "Setor"
+        },
+        {
+            name: "Nome Sobrenome",
+            ldap: "nome.sobrenome",
+            department: "Setor"
+        },
+        {
+            name: "Nome Sobrenome",
+            ldap: "nome.sobrenome",
+            department: "Setor"
+        },
+        {
+            name: "Nome Sobrenome",
+            ldap: "nome.sobrenome",
+            department: "Setor"
+        },
+        {
+            name: "Nome Sobrenome",
+            ldap: "nome.sobrenome",
+            department: "Setor"
+        },
+        {
+            name: "Nome Sobrenome",
+            ldap: "nome.sobrenome",
+            department: "Setor"
+        },
+        {
+            name: "Nome Sobrenome",
+            ldap: "nome.sobrenome",
+            department: "Setor"
+        },
+        {
+            name: "Nome Sobrenome",
+            ldap: "nome.sobrenome",
+            department: "Setor"
         }
     ];
+
+    onNewUser(){
+        this.newUser = !this.newUser;
+    }
 }

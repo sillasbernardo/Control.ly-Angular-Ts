@@ -1,12 +1,20 @@
 <div class="container">
+    <!-- Calls sidebar menu -->
     <app-sidemenu></app-sidemenu>
+
+    <!-- Main code for users page -->
     <div class="users-section">
         <h3>Usuários</h3>
+
+        <!-- Main code for search bar -->
         <div class="search-bar">
             <div class="blank-space"></div>
             <input type="text" name="search-bar" id="search-bar" placeholder="Procurar usuário">
             <fa-icon [icon]="faSearchIcon"></fa-icon>
+            <button (click)="onNewUser()">Novo usuário</button>
         </div>
+
+        <!-- Main code for table -->
         <table>
             <div class="users-list">
                 <tr class="theader">
@@ -33,4 +41,28 @@
             </div>
         </table>
     </div>
+
+    <!-- Main code for statistics -->
+    <div class="users-statistics">
+        <h4>Estatisticas</h4>
+        <div class="users-counting">
+            <span>{{users.length}}</span>
+            <p>Usuários cadastrados</p>
+        </div>
+    </div>
+
+    <!-- Opens a modal for new user creation -->
+    <div *ngIf="newUser" class="new-user">
+        <app-createuser (onNewUser)="onNewUser()"></app-createuser>
+    </div>
+
+    <!-- Needs to create a modal for user edit -->
+
+    <!-- Needs to create a modal for when user is created -->
+
+    <!-- Needs to create filter for th row -->
+
+    <!-- Needs to create the back code for search bar -->
+
+    <!-- Needs to create backend + database for user CRUD -->
 </div>

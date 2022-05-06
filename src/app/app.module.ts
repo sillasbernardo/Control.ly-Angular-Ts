@@ -9,6 +9,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { SidemenuComponent } from './dashboard/sidemenu/sidemenu.component';
 import { UsersComponent } from './dashboard/users/users.component';
+import { CreateUserComponent } from './dashboard/users/create user/createuser.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { UsersComponent } from './dashboard/users/users.component';
     HelpComponent,
     DashboardComponent,
     SidemenuComponent,
-    UsersComponent
+    UsersComponent,
+    CreateUserComponent
   ],
   imports: [
     BrowserModule,

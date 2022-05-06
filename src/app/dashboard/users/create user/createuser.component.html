@@ -1,0 +1,16 @@
+<!-- Creates a bg to gray out users component -->
+<div class="black-bg">
+</div>
+
+<!-- Main code for new user modal -->
+<div class="new-user-box">
+    <div class="title">
+        <h4>Novo usuário</h4>
+        <fa-icon (click)="onCloseNewUser()" [icon]="faCloseNewUser"></fa-icon>
+    </div>
+    <div class="line"></div>
+    <input type="text" id="name" placeholder="Insira o nome">
+    <input type="text" id="name" placeholder="Insira o LDAP">
+    <input type="text" id="name" placeholder="Insira o departamento">
+    <button type="submit">Criar</button>    
+</div>
