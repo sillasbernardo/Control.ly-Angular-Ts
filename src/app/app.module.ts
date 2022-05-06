@@ -5,19 +5,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './auth/login/login.component';
 import { HelpComponent } from './auth/help/help.component';
-import { HomeComponent } from './panel/home/home.component';
-import { SideNavComponent } from './panel/side-nav/side-nav.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { UsersComponent } from './panel/users/users.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { SidemenuComponent } from './dashboard/sidemenu/sidemenu.component';
+import { UsersComponent } from './dashboard/users/users.component';
+import { CreateUserComponent } from './dashboard/users/create user/createuser.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     HelpComponent,
-    HomeComponent,
-    SideNavComponent,
+    DashboardComponent,
+    SidemenuComponent,
     UsersComponent,
+    CreateUserComponent
   ],
   imports: [
     BrowserModule,

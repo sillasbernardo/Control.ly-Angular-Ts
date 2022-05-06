@@ -1,0 +1,90 @@
+// Main code for styling graying out bg
+.black-bg{
+    position: absolute;
+    top: 0;
+    left: 200px;
+    background: #000;
+    width: 84%;
+    height: 100vh;
+    opacity: 50%;
+}
+
+// Main code for styling new user modal
+.new-user-box{
+    position: absolute;
+    top: 20%;
+    left: 45%;
+    width: 300px;
+    background-color: #fff;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    border-radius: 7px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    // Title and close btn
+    .title{
+        display: inherit;
+        flex-direction: row;
+
+        h4{
+            font-family: sans-serif;
+            font-size: 16pt;
+            font-weight: 800;
+            color: #13395d;
+        }
+
+        fa-icon{
+            position: absolute;
+            top: 10px;
+            left: 310px;
+            font-size: 18pt;
+            color: #809bad;
+            cursor: pointer;
+        }
+    }
+
+    // Just a line between title/close btn and inputs
+    .line{
+        height: 1px;
+        opacity: 30%;
+        width: 340px;
+        margin: 15px 0;
+        background: #809bad;
+    }
+
+    // Input section - start
+    input{
+        margin: 7px 0;
+        width: 200px;
+        padding: 10px 10px;
+        border-style: none;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 7px;
+    }
+
+    input::placeholder{
+        color: #809bad;
+    }
+    // Input section - end
+
+    // Button section - start
+    button{
+        margin: 20px 0 0 0;
+        padding: 7px 25px;
+        border-style: none;
+        border-radius: 7px;
+        background-color: #13395d;
+        color: white;
+        font-family: sans-serif;
+        cursor: pointer;
+        opacity: 80%;
+    }
+
+    button:hover{
+        opacity: 100%;
+    }
+    // Button section - end
+}

@@ -3,23 +3,29 @@
         <img src="assets/img/logo.png" width="180" height="45">
         <span class="dashboard-word">Dashboard</span>
         <ul>
+<<<<<<< HEAD:src/app/panel/side-nav/side-nav.component.html
             <li (click)="goToUrl('/home')">
+=======
+            <li (click)="goToUrl('/home')"
+                [ngClass]="{bgli: href === '/home'}">
+>>>>>>> master:src/app/panel - backup/side-nav/side-nav.component.html
                 <fa-icon [icon]="faHome"></fa-icon>
                 <span>Home</span>
             </li>
-            <li>
+            <li [ngClass]="{bgli: href === '/tickets'}">
                 <fa-icon [icon]="faTicket"></fa-icon>
                 <span>Chamados</span>
             </li>
-            <li>
+            <li [ngClass]="{bgli: href === '/printers'}">
                 <fa-icon [icon]="faPrinter"></fa-icon>
                 <span>Impressoras</span>
             </li>
-            <li>
+            <li [ngClass]="{bgli: href === '/inventory'}">
                 <fa-icon [icon]="faInventory"></fa-icon>
                 <span>Inventário</span>
             </li>
-            <li (click)="goToUrl('/users')">
+            <li (click)="goToUrl('/users')"
+                [ngClass]="{bgli: href === '/users'}">
                 <fa-icon [icon]="faEmployees"></fa-icon>
                 <span>Usuários</span>
             </li>
