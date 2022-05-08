@@ -12,11 +12,11 @@ export class CreateUserComponent{
 
     faCloseNewUser = faCircleXmark;
 
-    @Output("onNewUser") onNewUser: EventEmitter<any> = new EventEmitter();
+    @Output("onCloseNewUser") onCloseNewUser: EventEmitter<any> = new EventEmitter();
 
-    onCloseNewUser()
+    onClose()
     {
-        this.onNewUser.emit();
+        this.onCloseNewUser.emit();
     }
 
 }

@@ -15,83 +15,42 @@ export class UsersComponent{
     faUserIcon = faCircleUser;
     faSearchIcon = faMagnifyingGlass;
 
-    newUser = false;
-    editUser = false;
+    newUser = false; // Triggers New User modal
+    editUser = false; // Triggers Edit User modal
 
+    // List of users (will be reworked)
     users = [
         {
-            name: "Nome Sobrenome",
+            name: "Martino Vladimir",
             ldap: "nome.sobrenome",
             department: "Setor"
         },
         {
-            name: "Nome Sobrenome",
+            name: "Mike Douglas",
             ldap: "nome.sobrenome",
             department: "Setor"
         },
         {
-            name: "Nome Sobrenome",
+            name: "Caitlyn Nouis",
             ldap: "nome.sobrenome",
             department: "Setor"
         },
-        {
-            name: "Nome Sobrenome",
-            ldap: "nome.sobrenome",
-            department: "Setor"
-        },
-        {
-            name: "Nome Sobrenome",
-            ldap: "nome.sobrenome",
-            department: "Setor"
-        },
-        {
-            name: "Nome Sobrenome",
-            ldap: "nome.sobrenome",
-            department: "Setor"
-        },
-        {
-            name: "Nome Sobrenome",
-            ldap: "nome.sobrenome",
-            department: "Setor"
-        },
-        {
-            name: "Nome Sobrenome",
-            ldap: "nome.sobrenome",
-            department: "Setor"
-        },
-        {
-            name: "Nome Sobrenome",
-            ldap: "nome.sobrenome",
-            department: "Setor"
-        },
-        {
-            name: "Nome Sobrenome",
-            ldap: "nome.sobrenome",
-            department: "Setor"
-        },
-        {
-            name: "Nome Sobrenome",
-            ldap: "nome.sobrenome",
-            department: "Setor"
-        }
     ];
 
-    getUserDetails: {name: string, ldap: string, department: string}[] = [
-        {"name": "", "ldap": "", "department": ""}
-    ];  
+    // Send values to useUserDetails, in editUser component
+    getUserDetails: {name: string, ldap: string, department: string} = 
+        {"name": "test", "ldap": "", "department": ""};
 
     // Iterate over users and catch the user whose attribute name 
     //is equal to the attribute passed to function
     onEditUser(name: String){
         this.users.forEach((element) => {
             if (name === element.name){
-                this.getUserDetails.map(item => {
-                    item.name = element.name;
-                    item.ldap = element.ldap;
-                    item.department = element.department;
-                })
-                this.editUser = !this.editUser;
-                
+                this.getUserDetails.name = element.name;
+                this.getUserDetails.ldap = element.ldap;
+                this.getUserDetails.department = element.department;
+                this.editUser = true;     
+
             }
         })
     }
@@ -100,8 +59,9 @@ export class UsersComponent{
         this.editUser = false;
     }
 
+
     onNewUser(){
-        this.newUser = !this.newUser;
+        this.newUser = true;
     }
 
     onCloseNewUser(){
@@ -110,5 +70,6 @@ export class UsersComponent{
 
     @HostListener('document:keydown.escape', ['$event']) onKeydownHandler(event: KeyboardEvent){
         this.onCloseNewUser();
+        this.onCloseEditUser();
     }
 }

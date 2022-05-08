@@ -11,6 +11,7 @@ import { SidemenuComponent } from './dashboard/sidemenu/sidemenu.component';
 import { UsersComponent } from './dashboard/users/users.component';
 import { CreateUserComponent } from './dashboard/users/create user/createuser.component';
 import { EditUserComponent } from './dashboard/users/edit user/edituser.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,8 +27,14 @@ import { EditUserComponent } from './dashboard/users/edit user/edituser.componen
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    FormsModule
   ],
+
+  exports: [
+    EditUserComponent
+  ],
+
   providers: [],
   bootstrap: [AppComponent]
 })
